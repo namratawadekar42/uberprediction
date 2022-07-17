@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib 
-model=joblib.load('ola')
+model=joblib.load('uber')
 st.title("UBER:NO OF WEEKLY RIDERS")
 f=st.number_input("enter price per week",15.00,110.00,step=5)
 s=st.number_input("enter population",1800000,1600000,step=10000)
