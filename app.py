@@ -8,6 +8,6 @@ t=st.number_input("monthly income",5800,16200,step=100)
 ft=st.number_input("average parking per month",50,200,step=5)
 op=model.predict([[f,s,t,ft]])
 if st.button('PREDICT'):
-  st.title("NO of weekly rides")
-  st.title(op[0])
+  st.text("NO of weekly rides:")
+  st.text(op[0])
     
